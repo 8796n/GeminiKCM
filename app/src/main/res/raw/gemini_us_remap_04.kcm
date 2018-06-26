@@ -143,7 +143,7 @@ key O {
     label:                              'O'
     base:                               'o'
     shift, capslock:                    'O'
-    fn:                                 '-'
+    fn:                                 '\\'
 
 }
 
@@ -224,8 +224,8 @@ key L {
 }
 
 key APOSTROPHE {
-    label:                              '\\'
-    base:                               '\\'
+    label:                              '-'
+    base:                               '-'
     shift:                              '|'
     fn:                                 ':'
 }
@@ -308,7 +308,7 @@ key SPACE {
     label:                              ' '
     base:                               ' '
     alt, meta:                          fallback SEARCH
-    ctrl:                               fallback LANGUAGE_SWITCH
+    ctrl:                               replace LANGUAGE_SWITCH
 }
 
 key COMMA {

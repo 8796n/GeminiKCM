@@ -146,7 +146,7 @@ key O {
     label:                              'O'
     base:                               'o'
     shift, capslock:                    'O'
-    fn:                                 '-'
+    fn:                                 '\\'
 
 }
 
@@ -227,8 +227,8 @@ key L {
 }
 
 key APOSTROPHE {
-    label:                              '\\'
-    base:                               '\\'
+    label:                              '-'
+    base:                               '-'
     shift:                              '|'
     fn:                                 ':'
 }
@@ -266,14 +266,12 @@ key B {
     label:                              'B'
     base:                               'b'
     shift, capslock:                    'B'
-    fn:                                 replace BRIGHTNESS_DOWN
 }
 
 key N {
     label:                              'N'
     base:                               'n'
     shift, capslock:                    'N'
-    fn:                                 replace BRIGHTNESS_UP
 }
 
 key M {
@@ -313,7 +311,7 @@ key SPACE {
     label:                              ' '
     base:                               ' '
     alt, meta:                          fallback SEARCH
-    ctrl:                               fallback LANGUAGE_SWITCH
+    ctrl:                               replace LANGUAGE_SWITCH
 }
 
 key SLASH {

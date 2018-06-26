@@ -1,6 +1,7 @@
 type OVERLAY
 
-map key 54 MINUS
+map key 54  META_LEFT
+map key 51  SLASH
 map key 51 DPAD_LEFT
 map key 52 COMMA
 map key 103 PERIOD
@@ -54,6 +55,7 @@ key 6 {
     base:                               '6'
     shift:                              '^'
     fn:                                 '>'
+    alt:                                replace F6
 }
 
 key 7 {
@@ -61,6 +63,7 @@ key 7 {
     base:                               '7'
     shift:                              '&'
     fn:                                 '['
+    alt:                                replace F7
 }
 
 key 8 {
@@ -68,6 +71,7 @@ key 8 {
     base:                               '8'
     shift:                              '*'
     fn:                                 ']'
+    alt:                                replace F8
 }
 
 key 9 {
@@ -75,6 +79,7 @@ key 9 {
     base:                               '9'
     shift:                              '('
     fn:                                 '{'
+    alt:                                replace F9
 }
 
 key 0 {
@@ -82,6 +87,7 @@ key 0 {
     base:                               '0'
     shift:                              ')'
     fn:                                 '}'
+    alt:                                replace F10
 }
 
 key DEL {
@@ -144,7 +150,7 @@ key O {
     label:                              'O'
     base:                               'o'
     shift, capslock:                    'O'
-    fn:                                 '-'
+    fn:                                 '\\'
 
 }
 
@@ -225,8 +231,8 @@ key L {
 }
 
 key APOSTROPHE {
-    label:                              '\\'
-    base:                               '\\'
+    label:                              '-'
+    base:                               '-'
     shift:                              '|'
     fn:                                 ':'
 }
@@ -312,7 +318,7 @@ key SPACE {
     ctrl:                               replace LANGUAGE_SWITCH
 }
 
-key COMMA {
+key SLASH {
     label:                              ','
     base:                               ','
     shift:                              '/'
@@ -321,20 +327,17 @@ key COMMA {
 key DPAD_LEFT {
    base:                                fallback DPAD_LEFT
    fn:                                  fallback MOVE_HOME
+   alt:                                 replace BACK
 }
 
 key DPAD_DOWN {
    base:                                fallback DPAD_DOWN
    fn:                                  fallback PAGE_DOWN
+   alt:                                 replace HOME
 }
 
 key DPAD_RIGHT {
    base:                                fallback DPAD_RIGHT
    fn:                                  fallback MOVE_END
-}
-
-key MINUS {
-    label:                              '-'
-    base:                               '-'
-    shift:                              '='
+   alt:                                 replace FORWARD
 }
