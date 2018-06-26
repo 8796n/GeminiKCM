@@ -7,4 +7,5 @@
     <keyboard-layout android:name="keyboard_layout_gemini_us_remap_04" android:label="@string/keyboard_layout_gemini_us_remap_04" android:keyboardLayout="@raw/gemini_us_remap_04" />
     <keyboard-layout android:name="keyboard_layout_gemini_us_remap_05" android:label="@string/keyboard_layout_gemini_us_remap_05" android:keyboardLayout="@raw/gemini_us_remap_05" />
     <keyboard-layout android:name="keyboard_layout_gemini_us_remap_06" android:label="@string/keyboard_layout_gemini_us_remap_06" android:keyboardLayout="@raw/gemini_us_remap_06" />
+    <keyboard-layout android:name="keyboard_layout_gemini_jp_remap_01" android:label="@string/keyboard_layout_gemini_jp_remap_01" android:keyboardLayout="@raw/gemini_jp_remap_01" />
 </keyboard-layouts>

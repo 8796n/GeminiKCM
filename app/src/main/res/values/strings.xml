@@ -6,6 +6,7 @@
     <string name="keyboard_layout_gemini_us_remap_02f">!Gemini PDA Keyboard US remap 02f 右SHIFTがHOME(fn:BACK) fallbackでイマイチ</string>
     <string name="keyboard_layout_gemini_us_remap_03">!Gemini PDA Keyboard US remap 03 左SHIFTと左CTRL入れ替え</string>
     <string name="keyboard_layout_gemini_us_remap_04">!Gemini PDA Keyboard US remap 04 Mの横が,.でスペースの右が←↑↓→</string>
-    <string name="keyboard_layout_gemini_us_remap_05">!Gemini PDA Keyboard US remap 05 01 + Alt+6～0でF6～F10</string>
+    <string name="keyboard_layout_gemini_us_remap_05">!Gemini PDA Keyboard US remap 05 Alt+6～0でF6～F10</string>
     <string name="keyboard_layout_gemini_us_remap_06">!Gemini PDA Keyboard US remap 06 05 + Fn+B,Nで明るさ調節復活 + Alt+←で戻る Alt+→で進む、右ShiftがMeta</string>
+    <string name="keyboard_layout_gemini_jp_remap_01">!Gemini PDA Keyboard JP remap 01 Fn+Qで[全角半角]、Fn+Altで[英数]、Fn+,で[かな], Fn+Sで[再生・一時停止]</string>
 </resources>

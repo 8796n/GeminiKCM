@@ -6,8 +6,8 @@ android {
         applicationId "jp.a8796.geminikcm"
         minSdkVersion 25
         targetSdkVersion 27
-        versionCode 27
-        versionName "1.0.26"
+        versionCode 30
+        versionName "1.0.29"
     }
     buildTypes {
         release {
