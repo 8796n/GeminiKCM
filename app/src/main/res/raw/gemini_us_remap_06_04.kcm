@@ -1,9 +1,8 @@
 type OVERLAY
 
 map key 54  META_LEFT
-map key 51  SLASH
-map key 51 DPAD_LEFT
-map key 52 COMMA
+map key 51  DPAD_LEFT
+map key 52  SLASH
 map key 103 PERIOD
 map key 105 DPAD_UP
 
