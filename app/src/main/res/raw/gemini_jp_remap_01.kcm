@@ -279,7 +279,7 @@ key PERIOD {
 
 key DPAD_UP {
    base:                                fallback DPAD_UP
-   fn:                                  fallback PAGE_UP
+   fn:                                  replace PAGE_UP
 }
 
 #key SHIFT_RIGHT {
@@ -302,7 +302,7 @@ key SPACE {
     label:                              ' '
     base:                               ' '
     alt, meta:                          fallback SEARCH
-    ctrl:                               replace LANGUAGE_SWITCH
+    ctrl:                               fallback LANGUAGE_SWITCH
 }
 
 key COMMA {
@@ -314,15 +314,15 @@ key COMMA {
 
 key DPAD_LEFT {
    base:                                fallback DPAD_LEFT
-   fn:                                  fallback MOVE_HOME
+   fn:                                  replace MOVE_HOME
 }
 
 key DPAD_DOWN {
    base:                                fallback DPAD_DOWN
-   fn:                                  fallback PAGE_DOWN
+   fn:                                  replace PAGE_DOWN
 }
 
 key DPAD_RIGHT {
    base:                                fallback DPAD_RIGHT
-   fn:                                  fallback MOVE_END
+   fn:                                  replace MOVE_END
 }

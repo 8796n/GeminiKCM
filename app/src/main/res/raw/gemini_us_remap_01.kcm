@@ -91,18 +91,21 @@ key Q {
     label:                              'Q'
     base:                               'q'
     shift, capslock:                    'Q'
+    fn:                                 replace MEDIA_PLAY_PAUSE
 }
 
 key W {
     label:                              'W'
     base:                               'w'
     shift, capslock:                    'W'
+    fn:                                 replace MEDIA_PREVIOUS
 }
 
 key E {
     label:                              'E'
     base:                               'e'
     shift, capslock:                    'E'
+    fn:                                 replace MEDIA_NEXT
 }
 
 key R {
@@ -115,6 +118,7 @@ key T {
     label:                              'T'
     base:                               't'
     shift, capslock:                    'T'
+    fn:                                 replace VOLUME_MUTE
 }
 
 key Y {
@@ -167,6 +171,7 @@ key A {
     label:                              'A'
     base:                               'a'
     shift, capslock:                    'A'
+    fn:                                 replace APP_SWITCH
 }
 
 key S {
@@ -179,6 +184,7 @@ key D {
     label:                              'D'
     base:                               'd'
     shift, capslock:                    'D'
+    fn:                                 replace HOME
 }
 
 key F {
@@ -248,24 +254,28 @@ key C {
     label:                              'C'
     base:                               'c'
     shift, capslock:                    'C'
+    fn:                                 replace VOLUME_DOWN
 }
 
 key V {
     label:                              'V'
     base:                               'v'
     shift, capslock:                    'V'
+    fn:                                 replace VOLUME_UP
 }
 
 key B {
     label:                              'B'
     base:                               'b'
     shift, capslock:                    'B'
+    fn:                                 replace BRIGHTNESS_DOWN
 }
 
 key N {
     label:                              'N'
     base:                               'n'
     shift, capslock:                    'N'
+    fn:                                 replace BRIGHTNESS_UP
 }
 
 key M {
@@ -283,7 +293,7 @@ key PERIOD {
 
 key DPAD_UP {
    base:                                fallback DPAD_UP
-   fn:                                  fallback PAGE_UP
+   fn:                                  replace PAGE_UP
 }
 
 #key SHIFT_RIGHT {
@@ -316,17 +326,17 @@ key COMMA {
 
 key DPAD_LEFT {
    base:                                fallback DPAD_LEFT
-   fn:                                  fallback MOVE_HOME
+   fn:                                  replace MOVE_HOME
 }
 
 key DPAD_DOWN {
    base:                                fallback DPAD_DOWN
-   fn:                                  fallback PAGE_DOWN
+   fn:                                  replace PAGE_DOWN
 }
 
 key DPAD_RIGHT {
    base:                                fallback DPAD_RIGHT
-   fn:                                  fallback MOVE_END
+   fn:                                  replace MOVE_END
 }
 
 key MINUS {
