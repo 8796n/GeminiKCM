@@ -1,13 +1,15 @@
 type OVERLAY
 
 map key 54  META_LEFT
-map key 51  SLASH
+map key 52  SLASH
+map key 103 PERIOD
+map key 51 DPAD_UP
 
 ### ROW 1
 
 key ESCAPE {
     base:                               fallback BACK
-    alt:                                fallback HOME
+    alt, meta:                          fallback HOME
     ctrl:                               fallback MENU
 }
 
@@ -298,8 +300,8 @@ key PERIOD {
 }
 
 key DPAD_UP {
-    base:                               fallback    DPAD_UP
-    fn:                                 replace     PAGE_UP
+   base:                                fallback DPAD_UP
+   fn:                                  replace PAGE_UP
 }
 
 #key SHIFT_RIGHT {
@@ -313,22 +315,21 @@ key DPAD_UP {
 #key FUNCTION {
 #}
 
-key ALT_LEFT {
-    fn:                                 replace     CONTACTS
-}
+#key ALT_LEFT {
+#    fn:                                 fallback SHOW_DIALER
+#}
 
 key SPACE {
     label:                              ' '
     base:                               ' '
-    alt:                                replace     SEARCH
-    ctrl:                               fallback    LANGUAGE_SWITCH
+    alt, meta:                          fallback SEARCH
+    ctrl:                               fallback LANGUAGE_SWITCH
 }
 
 key SLASH {
     label:                              ','
     base:                               ','
     shift:                              '/'
-    alt:                                 replace MENU
 }
 
 key DPAD_LEFT {
