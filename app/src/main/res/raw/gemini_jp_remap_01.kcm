@@ -80,65 +80,68 @@ key DEL {
 ### ROW 2
 
 key Q {
-    label:                              'q'
+    label:                              'Q'
     base:                               'q'
     shift, capslock:                    'Q'
     fn:                                 replace ZENKAKU_HANKAKU
 }
 
 key W {
-    label:                              'w'
+    label:                              'W'
     base:                               'w'
     shift, capslock:                    'W'
+    fn:                                 replace MEDIA_PREVIOUS
 }
 
 key E {
-    label:                              'e'
+    label:                              'E'
     base:                               'e'
     shift, capslock:                    'E'
+    fn:                                 replace MEDIA_NEXT
 }
 
 key R {
-    label:                              'r'
+    label:                              'R'
     base:                               'r'
     shift, capslock:                    'R'
 }
 
 key T {
-    label:                              't'
+    label:                              'T'
     base:                               't'
     shift, capslock:                    'T'
+    fn:                                 replace VOLUME_MUTE
 }
 
 key Y {
-    label:                              'y'
+    label:                              'Y'
     base:                               'y'
     shift, capslock:                    'Y'
     fn:                                 '/'
 }
 
 key U {
-    label:                              'u'
+    label:                              'U'
     base:                               'u'
     shift, capslock:                    'U'
 }
 
 key I {
-    label:                              'i'
+    label:                              'I'
     base:                               'i'
     shift, capslock:                    'I'
     fn:                                 '='
 }
 
 key O {
-    label:                              'o'
+    label:                              'O'
     base:                               'o'
     shift, capslock:                    'O'
     fn:                                 '\u3099'
 }
 
 key P {
-    label:                              'p'
+    label:                              'P'
     base:                               'p'
     shift, capslock:                    'P'
     fn:                                 '\u309A'
@@ -157,59 +160,60 @@ key TAB {
 }
 
 key A {
-    label:                              'a'
+    label:                              'A'
     base:                               'a'
     shift, capslock:                    'A'
 }
 
 key S {
-    label:                              's'
+    label:                              'S'
     base:                               's'
     shift, capslock:                    'S'
     fn:                                 replace MEDIA_PLAY_PAUSE
 }
 
 key D {
-    label:                              'd'
+    label:                              'D'
     base:                               'd'
     shift, capslock:                    'D'
+    fn:                                 replace HOME
 }
 
 key F {
-    label:                              'f'
+    label:                              'F'
     base:                               'f'
     shift, capslock:                    'F'
 }
 
 key G {
-    label:                              'g'
+    label:                              'G'
     base:                               'g'
     shift, capslock:                    'G'
 }
 
 key H {
-    label:                              'h'
+    label:                              'H'
     base:                               'h'
     shift, capslock:                    'H'
     fn:                                 '_'
 }
 
 key J {
-    label:                              'j'
+    label:                              'J'
     base:                               'j'
     shift, capslock:                    'J'
     fn:                                 '@'
 }
 
 key K {
-    label:                              'k'
+    label:                              'K'
     base:                               'k'
     shift, capslock:                    'K'
     fn:                                 '?'
 }
 
 key L {
-    label:                              'l'
+    label:                              'L'
     base:                               'l'
     shift, capslock:                    'L'
     fn:                                 ';'
@@ -227,44 +231,48 @@ key APOSTROPHE {
 #}
 
 key Z {
-    label:                              'z'
+    label:                              'Z'
     base:                               'z'
     shift, capslock:                    'Z'
     fn:                                 '^'
 }
 
 key X {
-    label:                              'x'
+    label:                              'X'
     base:                               'x'
     shift, capslock:                    'X'
 }
 
 key C {
-    label:                              'c'
+    label:                              'C'
     base:                               'c'
     shift, capslock:                    'C'
+    fn:                                 replace VOLUME_DOWN
 }
 
 key V {
-    label:                              'v'
+    label:                              'V'
     base:                               'v'
     shift, capslock:                    'V'
+    fn:                                 replace VOLUME_UP
 }
 
 key B {
-    label:                              'b'
+    label:                              'B'
     base:                               'b'
     shift, capslock:                    'B'
+    fn:                                 replace BRIGHTNESS_DOWN
 }
 
 key N {
-    label:                              'n'
+    label:                              'N'
     base:                               'n'
     shift, capslock:                    'N'
+    fn:                                 replace BRIGHTNESS_UP
 }
 
 key M {
-    label:                              'm'
+    label:                              'M'
     base:                               'm'
     shift, capslock:                    'M'
     fn:                                 '\u306C'
@@ -301,7 +309,7 @@ key ALT_LEFT {
 key SPACE {
     label:                              ' '
     base:                               ' '
-    alt, meta:                          fallback SEARCH
+    alt:                                replace     SEARCH
     ctrl:                               fallback LANGUAGE_SWITCH
 }
 

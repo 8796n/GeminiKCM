@@ -1,23 +1,18 @@
 type OVERLAY
 
-map key 51  DPAD_LEFT
-map key 52  COMMA
-map key 103 PERIOD
-map key 105 DPAD_UP
-
 ### ROW 1
 
 key 1 {
     label:                              '1'
     base:                               '1'
     shift:                              '!'
-    fn:                                 '~'
+    fn:                                 '|'
 }
 
 key 2 {
     label:                              '2'
     base:                               '2'
-    shift:                              '@'
+    shift:                              '"'
     fn:                                 '`'
 }
 
@@ -25,14 +20,14 @@ key 3 {
     label:                              '3'
     base:                               '3'
     shift:                              '#'
-    fn:                                 '\u00a3'
+    fn:                                 '\\'
 }
 
 key 4 {
     label:                              '4'
     base:                               '4'
     shift:                              '$'
-    fn:                                 '\u20ac'
+    fn:                                 '\u00A5'
 }
 
 key 5 {
@@ -45,36 +40,41 @@ key 5 {
 key 6 {
     label:                              '6'
     base:                               '6'
-    shift:                              '^'
+    shift:                              '&'
     fn:                                 '>'
+    alt:                                replace F6
 }
 
 key 7 {
     label:                              '7'
     base:                               '7'
-    shift:                              '&'
+    shift:                              '\''
     fn:                                 '['
+    fn+shift:                           '{'
+    alt:                                replace F7
 }
 
 key 8 {
     label:                              '8'
     base:                               '8'
-    shift:                              '*'
+    shift:                              '('
     fn:                                 ']'
+    fn+shift:                           '}'
+    alt:                                replace F8
 }
 
 key 9 {
     label:                              '9'
     base:                               '9'
-    shift:                              '('
-    fn:                                 '{'
+    shift:                              ')'
+    alt:                                replace F9
 }
 
 key 0 {
     label:                              '0'
     base:                               '0'
-    shift:                              ')'
-    fn:                                 '}'
+    shift:                              '~'
+    alt:                                replace F10
 }
 
 key DEL {
@@ -88,18 +88,21 @@ key Q {
     label:                              'Q'
     base:                               'q'
     shift, capslock:                    'Q'
+    fn:                                 replace ZENKAKU_HANKAKU
 }
 
 key W {
     label:                              'W'
     base:                               'w'
     shift, capslock:                    'W'
+    fn:                                 replace MEDIA_PREVIOUS
 }
 
 key E {
     label:                              'E'
     base:                               'e'
     shift, capslock:                    'E'
+    fn:                                 replace MEDIA_NEXT
 }
 
 key R {
@@ -112,12 +115,14 @@ key T {
     label:                              'T'
     base:                               't'
     shift, capslock:                    'T'
+    fn:                                 replace VOLUME_MUTE
 }
 
 key Y {
     label:                              'Y'
     base:                               'y'
     shift, capslock:                    'Y'
+    fn:                                 '/'
 }
 
 key U {
@@ -130,22 +135,21 @@ key I {
     label:                              'I'
     base:                               'i'
     shift, capslock:                    'I'
-    fn:                                 '+'
+    fn:                                 '='
 }
 
 key O {
     label:                              'O'
     base:                               'o'
     shift, capslock:                    'O'
-    fn:                                 '\\'
-
+    fn:                                 '\u3099'
 }
 
 key P {
     label:                              'P'
     base:                               'p'
     shift, capslock:                    'P'
-    fn:                                 '='
+    fn:                                 '\u309A'
 }
 
 key ENTER {
@@ -170,12 +174,14 @@ key S {
     label:                              'S'
     base:                               's'
     shift, capslock:                    'S'
+    fn:                                 replace MEDIA_PLAY_PAUSE
 }
 
 key D {
     label:                              'D'
     base:                               'd'
     shift, capslock:                    'D'
+    fn:                                 replace HOME
 }
 
 key F {
@@ -194,34 +200,34 @@ key H {
     label:                              'H'
     base:                               'h'
     shift, capslock:                    'H'
+    fn:                                 '_'
 }
 
 key J {
     label:                              'J'
     base:                               'j'
     shift, capslock:                    'J'
-    fn:                                 '_'
+    fn:                                 '@'
 }
 
 key K {
     label:                              'K'
     base:                               'k'
     shift, capslock:                    'K'
-    fn:                                 ';'
+    fn:                                 '?'
 }
 
 key L {
     label:                              'L'
     base:                               'l'
     shift, capslock:                    'L'
-    fn:                                 '"'
+    fn:                                 ';'
 }
 
 key APOSTROPHE {
-    label:                              '-'
-    base:                               '-'
-    shift:                              '|'
-    fn:                                 ':'
+    label:                              ':'
+    base:                               ':'
+    shift:                              '*'
 }
 
 ### ROW 4
@@ -233,6 +239,7 @@ key Z {
     label:                              'Z'
     base:                               'z'
     shift, capslock:                    'Z'
+    fn:                                 '^'
 }
 
 key X {
@@ -245,37 +252,42 @@ key C {
     label:                              'C'
     base:                               'c'
     shift, capslock:                    'C'
+    fn:                                 replace VOLUME_DOWN
 }
 
 key V {
     label:                              'V'
     base:                               'v'
     shift, capslock:                    'V'
+    fn:                                 replace VOLUME_UP
 }
 
 key B {
     label:                              'B'
     base:                               'b'
     shift, capslock:                    'B'
+    fn:                                 replace BRIGHTNESS_DOWN
 }
 
 key N {
     label:                              'N'
     base:                               'n'
     shift, capslock:                    'N'
+    fn:                                 replace BRIGHTNESS_UP
 }
 
 key M {
     label:                              'M'
     base:                               'm'
     shift, capslock:                    'M'
-    fn:                                 '\''
+    fn:                                 '\u306C'
 }
 
 key PERIOD {
     label:                              '.'
     base:                               '.'
-    shift:                              '?'
+    shift:                              '+'
+    fn:                                 '\u308D'
 }
 
 key DPAD_UP {
@@ -294,35 +306,39 @@ key DPAD_UP {
 #key FUNCTION {
 #}
 
-#key ALT_LEFT {
-#    fn:                                 fallback SHOW_DIALER
-#}
+key ALT_LEFT {
+    base:                               replace ALT_LEFT
+    fn:                                 replace EISU
+}
 
 key SPACE {
     label:                              ' '
     base:                               ' '
-    alt, meta:                          fallback SEARCH
+    alt:                                replace     SEARCH
     ctrl:                               fallback LANGUAGE_SWITCH
 }
 
 key COMMA {
     label:                              ','
     base:                               ','
-    shift:                              '/'
+    shift:                              '-'
+    fn:                                 replace KANA
 }
 
 key DPAD_LEFT {
    base:                                fallback DPAD_LEFT
    fn:                                  replace MOVE_HOME
+   alt:                                 replace BACK
 }
 
 key DPAD_DOWN {
    base:                                fallback DPAD_DOWN
    fn:                                  replace PAGE_DOWN
+   alt:                                 replace HOME
 }
 
 key DPAD_RIGHT {
    base:                                fallback DPAD_RIGHT
    fn:                                  replace MOVE_END
+   alt:                                 replace FORWARD
 }
-

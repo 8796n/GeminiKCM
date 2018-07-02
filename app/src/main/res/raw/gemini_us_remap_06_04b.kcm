@@ -7,12 +7,6 @@ map key 51 DPAD_UP
 
 ### ROW 1
 
-key ESCAPE {
-    base:                               fallback BACK
-    alt, meta:                          fallback HOME
-    ctrl:                               fallback MENU
-}
-
 key 1 {
     label:                              '1'
     base:                               '1'
@@ -316,13 +310,13 @@ key DPAD_UP {
 #}
 
 #key ALT_LEFT {
-#    fn:                                 fallback SHOW_DIALER
+#    fn:                                 replace     CONTACTS
 #}
 
 key SPACE {
     label:                              ' '
     base:                               ' '
-    alt, meta:                          fallback SEARCH
+    alt:                                replace     SEARCH
     ctrl:                               fallback LANGUAGE_SWITCH
 }
 
@@ -330,6 +324,7 @@ key SLASH {
     label:                              ','
     base:                               ','
     shift:                              '/'
+    alt:                                 replace MENU
 }
 
 key DPAD_LEFT {

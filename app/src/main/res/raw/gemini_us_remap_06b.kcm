@@ -1,9 +1,7 @@
 type OVERLAY
 
-map key 51  DPAD_LEFT
-map key 52  COMMA
-map key 103 PERIOD
-map key 105 DPAD_UP
+map key 42  META_LEFT
+map key 51  SLASH
 
 ### ROW 1
 
@@ -47,6 +45,7 @@ key 6 {
     base:                               '6'
     shift:                              '^'
     fn:                                 '>'
+    alt:                                replace F6
 }
 
 key 7 {
@@ -54,6 +53,7 @@ key 7 {
     base:                               '7'
     shift:                              '&'
     fn:                                 '['
+    alt:                                replace F7
 }
 
 key 8 {
@@ -61,6 +61,7 @@ key 8 {
     base:                               '8'
     shift:                              '*'
     fn:                                 ']'
+    alt:                                replace F8
 }
 
 key 9 {
@@ -68,6 +69,7 @@ key 9 {
     base:                               '9'
     shift:                              '('
     fn:                                 '{'
+    alt:                                replace F9
 }
 
 key 0 {
@@ -75,6 +77,7 @@ key 0 {
     base:                               '0'
     shift:                              ')'
     fn:                                 '}'
+    alt:                                replace F10
 }
 
 key DEL {
@@ -88,18 +91,21 @@ key Q {
     label:                              'Q'
     base:                               'q'
     shift, capslock:                    'Q'
+    fn:                                 replace MEDIA_PLAY_PAUSE
 }
 
 key W {
     label:                              'W'
     base:                               'w'
     shift, capslock:                    'W'
+    fn:                                 replace MEDIA_PREVIOUS
 }
 
 key E {
     label:                              'E'
     base:                               'e'
     shift, capslock:                    'E'
+    fn:                                 replace MEDIA_NEXT
 }
 
 key R {
@@ -112,6 +118,7 @@ key T {
     label:                              'T'
     base:                               't'
     shift, capslock:                    'T'
+    fn:                                 replace VOLUME_MUTE
 }
 
 key Y {
@@ -164,6 +171,7 @@ key A {
     label:                              'A'
     base:                               'a'
     shift, capslock:                    'A'
+    fn:                                 replace APP_SWITCH
 }
 
 key S {
@@ -176,6 +184,7 @@ key D {
     label:                              'D'
     base:                               'd'
     shift, capslock:                    'D'
+    fn:                                 replace HOME
 }
 
 key F {
@@ -245,24 +254,28 @@ key C {
     label:                              'C'
     base:                               'c'
     shift, capslock:                    'C'
+    fn:                                 replace VOLUME_DOWN
 }
 
 key V {
     label:                              'V'
     base:                               'v'
     shift, capslock:                    'V'
+    fn:                                 replace VOLUME_UP
 }
 
 key B {
     label:                              'B'
     base:                               'b'
     shift, capslock:                    'B'
+    fn:                                 replace BRIGHTNESS_DOWN
 }
 
 key N {
     label:                              'N'
     base:                               'n'
     shift, capslock:                    'N'
+    fn:                                 replace BRIGHTNESS_UP
 }
 
 key M {
@@ -279,8 +292,8 @@ key PERIOD {
 }
 
 key DPAD_UP {
-   base:                                fallback DPAD_UP
-   fn:                                  replace PAGE_UP
+    base:                               fallback    DPAD_UP
+    fn:                                 replace     PAGE_UP
 }
 
 #key SHIFT_RIGHT {
@@ -295,34 +308,37 @@ key DPAD_UP {
 #}
 
 #key ALT_LEFT {
-#    fn:                                 fallback SHOW_DIALER
+#    fn:                                 replace     CONTACTS
 #}
 
 key SPACE {
     label:                              ' '
     base:                               ' '
-    alt, meta:                          fallback SEARCH
-    ctrl:                               fallback LANGUAGE_SWITCH
+    alt:                                replace     SEARCH
+    ctrl:                               fallback    LANGUAGE_SWITCH
 }
 
-key COMMA {
+key SLASH {
     label:                              ','
     base:                               ','
     shift:                              '/'
+    alt:                                 replace MENU
 }
 
 key DPAD_LEFT {
    base:                                fallback DPAD_LEFT
    fn:                                  replace MOVE_HOME
+   alt:                                 replace BACK
 }
 
 key DPAD_DOWN {
    base:                                fallback DPAD_DOWN
    fn:                                  replace PAGE_DOWN
+   alt:                                 replace HOME
 }
 
 key DPAD_RIGHT {
    base:                                fallback DPAD_RIGHT
    fn:                                  replace MOVE_END
+   alt:                                 replace FORWARD
 }
-

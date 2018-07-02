@@ -1,15 +1,19 @@
 <resources>
     <string name="app_name">Gemini PDA KCM</string>
     <string name="keyboard_layout_label">KCM remap test for Gemini PDA</string>
-    <string name="keyboard_layout_gemini_us_remap_01">!Gemini PDA Keyboard US remap 01 右SHIFTが長音記号</string>
-    <string name="keyboard_layout_gemini_us_remap_02">!Gemini PDA Keyboard US remap 02 右SHIFTがHOME(fn:BACK) replaceでバッチリ</string>
-    <string name="keyboard_layout_gemini_us_remap_02f">!Gemini PDA Keyboard US remap 02f 右SHIFTがHOME(fn:BACK) fallbackでイマイチ</string>
-    <string name="keyboard_layout_gemini_us_remap_03">!Gemini PDA Keyboard US remap 03 \\ ⇔ -, 左SHIFTと左CTRL入れ替え</string>
-    <string name="keyboard_layout_gemini_us_remap_04">!Gemini PDA Keyboard US remap 04 \\ ⇔ -, Mの右が,.でスペースの右が←↑↓→</string>
-    <string name="keyboard_layout_gemini_us_remap_04b">!Gemini PDA Keyboard US remap 04b \\ ⇔ -, Mの右が,.でスペースの右が↑←↓→</string>
-    <string name="keyboard_layout_gemini_us_remap_05">!Gemini PDA Keyboard US remap 05 \\ ⇔ -, Alt+6～0でF6～F10</string>
-    <string name="keyboard_layout_gemini_us_remap_06">!Gemini PDA Keyboard US remap 06 05 + Alt+←で戻る Alt+→で進む、右ShiftがMeta</string>
-    <string name="keyboard_layout_gemini_us_remap_06_04">!Gemini PDA Keyboard US remap 06+04 </string>
-    <string name="keyboard_layout_gemini_us_remap_06_04b">!Gemini PDA Keyboard US remap 06+04b </string>
-    <string name="keyboard_layout_gemini_jp_remap_01">!Gemini PDA Keyboard JP remap 01 Fn+Qで[全角半角]、Fn+Altで[英数]、Fn+,で[かな], Fn+Sで[再生・一時停止]</string>
+    <string name="keyboard_layout_gemini_us_remap_01">!Gemini PDA US remap 01 右SHIFTが長音記号</string>
+    <string name="keyboard_layout_gemini_us_remap_02">!Gemini PDA US remap 02 右SHIFTがHOME(fn:BACK) replaceでバッチリ</string>
+    <string name="keyboard_layout_gemini_us_remap_02f">!Gemini PDA US remap 02f 右SHIFTがHOME(fn:BACK) fallbackでイマイチ</string>
+    <string name="keyboard_layout_gemini_us_remap_03">!Gemini PDA US remap 03 \\ ⇔ -, 左SHIFTと左CTRL入れ替え</string>
+    <string name="keyboard_layout_gemini_us_remap_04">!Gemini PDA US remap 04 \\ ⇔ -, Mの右が,.でスペースの右が←↑↓→</string>
+    <string name="keyboard_layout_gemini_us_remap_04b">!Gemini PDA US remap 04b \\ ⇔ -, Mの右が,.でスペースの右が↑←↓→</string>
+    <string name="keyboard_layout_gemini_us_remap_05">!Gemini PDA US remap 05 \\ ⇔ -, Alt+6～0で[F6～F10], Alt+←=[戻る] Alt+↓=[ホーム] Alt+→=[進む]</string>
+    <string name="keyboard_layout_gemini_us_remap_06">!Gemini PDA US remap 06 05 + 右Shift=[Meta]</string>
+    <string name="keyboard_layout_gemini_us_remap_06b">!Gemini PDA US remap 06b 05 + 左Shift=[Meta]</string>
+    <string name="keyboard_layout_gemini_us_remap_06_04">!Gemini PDA US remap 06+04 </string>
+    <string name="keyboard_layout_gemini_us_remap_06_04b">!Gemini PDA US remap 06+04b </string>
+    <string name="keyboard_layout_gemini_us_remap_06b_04b">!Gemini PDA US remap 06b+04b </string>
+    <string name="keyboard_layout_gemini_jp_remap_01">!Gemini PDA JP remap 01 Fn+Q=[全角半角]、Fn+Alt=[英数]、Fn+,=[かな], Fn+S=[再生・一時停止]</string>
+    <string name="keyboard_layout_gemini_jp_remap_02">!Gemini PDA JP remap 02 01 + Alt+6～0=[F6～F10], Alt+←=[戻る] Alt+↓=[ホーム] Alt+→=[進む]</string>
+    <string name="keyboard_layout_gemini_jp_remap_03">!Gemini PDA JP remap 03 02 + 右Shift=[Meta]</string>
 </resources>

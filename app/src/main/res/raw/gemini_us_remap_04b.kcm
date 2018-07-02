@@ -6,12 +6,6 @@ map key 51 DPAD_UP
 
 ### ROW 1
 
-key ESCAPE {
-    base:                               fallback BACK
-    alt, meta:                          fallback HOME
-    ctrl:                               fallback MENU
-}
-
 key 1 {
     label:                              '1'
     base:                               '1'
