@@ -314,8 +314,8 @@ key ALT_LEFT {
 key SPACE {
     label:                              ' '
     base:                               ' '
-    alt:                                replace     SEARCH
-    ctrl:                               fallback LANGUAGE_SWITCH
+    alt:                                fallback    SEARCH
+    ctrl:                               fallback    LANGUAGE_SWITCH
 }
 
 key COMMA {

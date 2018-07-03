@@ -314,7 +314,7 @@ key DPAD_UP {
 key SPACE {
     label:                              ' '
     base:                               ' '
-    alt:                                replace     SEARCH
+    alt:                                fallback    SEARCH
     ctrl:                               fallback    LANGUAGE_SWITCH
 }
 
