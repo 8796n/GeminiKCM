@@ -225,8 +225,8 @@ key L {
 }
 
 key APOSTROPHE {
-    label:                              ':'
-    base:                               ':'
+    label:                              '-'
+    base:                               '-'
     shift:                              '*'
 }
 
@@ -321,7 +321,7 @@ key SPACE {
 key COMMA {
     label:                              ','
     base:                               ','
-    shift:                              '-'
+    shift:                              ':'
     fn:                                 replace KANA
 }
 
